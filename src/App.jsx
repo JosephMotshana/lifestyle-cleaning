@@ -1,28 +1,27 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import Quote from './pages/Quote';
 import About from './pages/About';
 import Contact from './pages/Contact';
+// Ensure this import matches the file name where you saved the Quote page
+import Quote from './pages/Quote'; 
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-slate-50 text-slate-800">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/quote" element={<GetAQuote />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Update this path definition to match the exact imported variable */}
+        <Route path="/quote" element={<Quote />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }

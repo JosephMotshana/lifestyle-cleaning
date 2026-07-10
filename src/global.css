@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-forest: #2d5a3f;      /* The dark elegant green headers */
+    --brand-sage: #7ba689;        /* The lighter leaf line art green */
+    --brand-bg-light: #f7f9f7;    /* The soft, off-white background */
+  }
+}
+
+/* ==========================================================================
+   2. NAVBAR COMPONENT
+   ========================================================================== */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo-image {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-logo {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  color: var(--brand-forest);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-subtext {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--brand-sage);
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Desktop Menu Layout Rules */
+.navbar-desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+  padding-bottom: 4px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: var(--brand-forest);
+}
+
+.nav-item.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--brand-sage);
+}
+
+.btn-nav-quote {
+  background-color: var(--brand-forest);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-nav-quote:hover {
+  background-color: var(--brand-forest-hover);
+}
+
+/* Hide Hamburger Toggle Action Button on Desktops */
+.navbar-mobile-toggle {
+  display: none;
+}
+
+/* Hidden container on desktop sizes */
+.navbar-mobile-dropdown {
+  display: none;
+}
+
+/* Responsive Structural Breakpoint */
+@media (max-width: 768px) {
+  /* Remove desktop layouts */
+  .navbar-desktop-menu {
+    display: none;
+  }
+
+  /* Expose Hamburger Button Actions */
+  .navbar-mobile-toggle {
+    display: block;
+  }
+  
+  .navbar-mobile-toggle button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  /* Mobile Dropdown Styling Blocks */
+  .navbar-mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #ffffff;
+    border-top: 1px solid var(--border-color);
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  /* Trigger expansion class smoothly without layout thrashing */
+  .navbar-mobile-dropdown.open {
+    max-height: 300px;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .mobile-nav-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .mobile-nav-item.mobile-active,
+  .mobile-nav-item:hover {
+    background-color: var(--brand-sage-light);
+    color: var(--brand-forest);
+  }
+
+  .btn-mobile-quote {
+    background-color: var(--brand-forest);
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-mobile-quote:hover {
+    background-color: var(--brand-forest-hover);
+  }
+}
