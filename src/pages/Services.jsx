@@ -5,7 +5,7 @@ import { Home, Sparkles, Truck, Shirt, LayoutGrid } from 'lucide-react';
 export default function Services() {
   const serviceList = [
     { title: 'Standard Cleaning', icon: <Home size={24} />, desc: 'Reliable, recurring tidy ups to keep your living spaces fresh and healthy.' },
-    { title: 'Deep Cleaning', icon: <Sparkles size={24} />, desc: 'An intensive top-to-bottom sanitize tackling hidden grime, baseboards, and appliances.' },
+    { title: 'Gardening', icon: <Sparkles size={24} />, desc: 'An intensive outdoors refresh tackling overgrown lawn, garden beds, weeds, and pristine hedge trimming.' },
     { title: 'Move-in / Move-out Cleaning', icon: <Truck size={24} />, desc: 'Perfect for landlords, tenants, and property owners setting up new beginnings.' },
     { title: 'Laundry Assistance', icon: <Shirt size={24} />, desc: 'Professional fabric washing, drying, and organization to lift the load off your week.' },
     { title: 'Home Organization / Packages', icon: <LayoutGrid size={24} />, desc: 'Decluttering spaces and building customized monthly maintenance schedules.' },

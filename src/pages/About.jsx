@@ -10,7 +10,7 @@ export default function About() {
         <div className="story-card">
           <h2 className="story-title">Our Story</h2>
           <p className="story-text">
-            <strong>LIFESTYLE HomeCare</strong> (operating as <strong>Lifestyle Cleaning</strong>) was created to provide reliable, professional, and quality homecare and cleaning services that help clients enjoy cleaner, healthier living spaces. We treat every home with custom attention, ensuring your peace of mind is preserved.
+            <strong>LIFESTYLE Cleaning</strong> was created to provide reliable, professional, and quality homecare and cleaning services that help clients enjoy cleaner, healthier living spaces. We treat every home with custom attention, ensuring your peace of mind is preserved.
           </p>
         </div>
 

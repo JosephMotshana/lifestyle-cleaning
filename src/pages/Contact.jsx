@@ -13,7 +13,7 @@ export default function Contact() {
         {/* Contact Info Channels */}
         <div className="contact-info-panel">
           <div className="panel-header">
-            <h2 className="panel-title">How We Reach You</h2>
+            <h2 className="panel-title">Contact Us</h2>
             <p className="panel-desc">Have a quick question or want to lock down an immediate booking? Reach out directly via our official channels.</p>
           </div>
 
@@ -21,7 +21,7 @@ export default function Contact() {
             <a href="https://wa.me/27602752239" target="_blank" rel="noreferrer" className="channel-link-box">
               <div className="channel-icon-badge badge-whatsapp"><MessageSquare size={20} /></div>
               <div className="channel-label-box">
-                <span className="channel-tag">WhatsApp Business</span>
+                <span className="channel-tag">Call/WhatsApp</span>
                 <span className="channel-value">060 275 2239</span>
               </div>
             </a>
