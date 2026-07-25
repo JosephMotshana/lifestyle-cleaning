@@ -61,7 +61,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
-  height: 80px;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +74,7 @@ img {
 }
 
 .navbar-logo-image {
-  height: 64px;
+  height: 110px;
   width: auto;
   object-fit: contain;
 }
@@ -272,12 +272,13 @@ img {
 
 .hero-image {
   width: 100%;
-  height: 280px;
-  background-color: #cbd5e1;
+  height: 400px; /* Increased from 200px to give it enough height */
+  background-color: #f7f9f7; /* Matches your background color so edges blend smoothly */
   border-radius: 16px;
-  background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800');
-  background-size: cover;
+  background-image: url('../src/assets/home.jpeg');
+  background-size: contain; /* Shrinks whole image inside container without cropping */
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .badges-section {
