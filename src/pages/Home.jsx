@@ -90,7 +90,7 @@ export default function Home() {
       <section className="why-us-section">
         <div className="why-us-container">
           <div className="section-header">
-            <h2 className="section-title">Why Choose Lifestyle Cleaning</h2>
+            <h2 className="section-title">Why Choose Lifestyle Cleaning ?</h2>
             <p className="section-subtitle">We build long-term relationships through quality, security, and consistent results.</p>
           </div>
           <div className="why-us-grid">
