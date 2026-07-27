@@ -19,12 +19,12 @@ import {
 
 export default function Home() {
   const homeServices = [
-    { title: 'Residential Cleaning', icon: <HomeIcon size={24} />, desc: 'Routine cleaning to keep your home fresh, tidy, and comfortable.' },
-    { title: 'Commercial Cleaning', icon: <Paperclip size={24} />, desc: 'Professional office & workplace sanitization tailored for businesses.' },
-    { title: 'Pre/Post-Occupational', icon: <Truck size={24} />, desc: 'Comprehensive move-in/move-out cleaning for a fresh start.' },
-    { title: 'Laundry Services', icon: <Shirt size={24} />, desc: 'Washing, drying, folding, and optional pick-up/drop-off.' },
-    { title: 'Deep Cleaning', icon: <Sparkles size={24} />, desc: 'Top-to-bottom detail cleaning for hidden grime and hard spots.' },
-    { title: 'Gardening & Yard Care', icon: <Flower size={24} />, desc: 'Outdoor maintenance, lawn trimming, and garden bed refreshes.' },
+    { title: 'Residential Cleaning', icon: <HomeIcon size={24} />,},
+    { title: 'Commercial Cleaning', icon: <Paperclip size={24} />,},
+    { title: 'Pre/Post-Occupational', icon: <Truck size={24} />, },
+    { title: 'Laundry Services', icon: <Shirt size={24} />, },
+    { title: 'Deep Cleaning', icon: <Sparkles size={24} />,},
+    { title: 'Gardening & Yard Care', icon: <Flower size={24} />,},
   ];
 
   return (
@@ -156,10 +156,10 @@ export default function Home() {
           <p className="cta-desc">Get in touch with us today for a personalized quote or to schedule your service.</p>
           <div className="cta-buttons">
             <Link to="/quote" className="btn-cta-primary">
-              Get Your Free Estimate
+              Get Your Free Quote
             </Link>
             <Link to="/contact" className="btn-cta-secondary">
-              Contact Us Directly
+              Contact Us
             </Link>
           </div>
         </div>
