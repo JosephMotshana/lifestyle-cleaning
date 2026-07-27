@@ -467,10 +467,15 @@ img {
 }
 
 /* ==========================================================================
-   5. ABOUT PAGE
+   5. ABOUT PAGE (FULL BACKGROUND OVERLAY)
    ========================================================================== */
 .about-page {
   padding: 48px 0;
+  width: 100%;
+  /* Image background mixed with a soft translucent light tint */
+  background: 
+    url('../src/assets/about.jpeg') center/cover no-repeat;
+  background-attachment: fixed; /* Creates a smooth subtle parallax effect */
 }
 
 .about-container {
@@ -480,11 +485,12 @@ img {
 }
 
 .story-card {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95); /* Slight opacity so it pops off background */
   border-radius: 16px;
   padding: 24px;
   border: 1px solid var(--border-color);
   margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .story-title {
@@ -509,12 +515,13 @@ img {
 }
 
 .about-split-card {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 24px;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   display: flex;
   gap: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 .split-icon-badge {
@@ -523,6 +530,7 @@ img {
   color: var(--brand-forest);
   border-radius: 50%;
   height: fit-content;
+  flex-shrink: 0;
 }
 
 .split-title {
