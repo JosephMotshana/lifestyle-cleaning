@@ -7,6 +7,7 @@ import residentialImg from '../assets/residential.jpeg';
 import commercialImg from '../assets/commercial.jpeg';
 import prepostImg from '../assets/prepost.jpeg';
 import laundryImg from '../assets/laundry.jpeg';
+import gardenImg from '../assets/garden.jpeg';
 
 
 export default function Services() {
@@ -40,7 +41,7 @@ export default function Services() {
       title: 'Gardening', 
       icon: <Flower size={20} />, 
       // Temporary placeholder image for Gardening
-      image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=600',
+      image: gardenImg,
       desc: 'An intensive outdoors refresh tackling overgrown lawn, garden beds, weeds, and pristine hedge trimming.' 
     },
   ];
