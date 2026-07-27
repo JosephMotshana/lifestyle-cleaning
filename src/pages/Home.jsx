@@ -23,7 +23,6 @@ export default function Home() {
     { title: 'Commercial Cleaning', icon: <Paperclip size={24} />,},
     { title: 'Pre/Post-Occupational', icon: <Truck size={24} />, },
     { title: 'Laundry Services', icon: <Shirt size={24} />, },
-    { title: 'Deep Cleaning', icon: <Sparkles size={24} />,},
     { title: 'Gardening & Yard Care', icon: <Flower size={24} />,},
   ];
 
