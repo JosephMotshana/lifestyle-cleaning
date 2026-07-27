@@ -43,11 +43,12 @@ export default function Quote() {
               onChange={handleChange}
               className="field-select"
             >
-              <option value="Standard Residential Cleaning">Standard Residential Cleaning</option>
-              <option value="Deep Cleaning">Gardening</option>
-              <option value="Move-In / Move-Out Clean">Move-In / Move-Out Clean</option>
-              <option value="Laundry Assistance">Laundry Assistance</option>
-              <option value="Commercial/Office Space">Commercial/Office Space</option>
+              <option value="Residential Cleaning">Residential Cleaning</option>
+              <option value="Deep Cleaning">Deep Cleaning</option>
+              <option value="Pre/Post Occupational Cleaning">Pre/Post Occupational Cleaning</option>
+              <option value="Laundry Cleaning">Laundry Cleaning</option>
+              <option value="Commercial/Office Cleaning">Commercial/Office Cleaning</option>
+              <option value="Gardening">Gardening</option>
             </select>
           </div>
 
