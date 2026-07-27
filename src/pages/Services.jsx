@@ -7,7 +7,7 @@ import residentialImg from '../assets/residential.jpeg';
 import commercialImg from '../assets/commercial.jpeg';
 import prepostImg from '../assets/prepost.jpeg';
 import laundryImg from '../assets/laundry.jpeg';
-import deepImg from '../assets/deep.jpeg';
+
 
 export default function Services() {
   const serviceList = [
@@ -35,12 +35,7 @@ export default function Services() {
       image: laundryImg,
       desc: 'Convenient washing, drying and neatly folding of clothing, bedding and household linen. Pick-up and drop-off services are also available for added convenience.' 
     },
-    { 
-      title: 'Deep Cleaning', 
-      icon: <Sparkles size={20} />, 
-      image: deepImg,
-      desc: 'A detailed top-to-bottom clean that targets built-up dirt, grease, dust and hard-to-reach areas. Ideal for homes that need extra attention, seasonal cleaning or a complete refresh.' 
-    },
+    
     { 
       title: 'Gardening', 
       icon: <Flower size={20} />, 
@@ -81,7 +76,7 @@ export default function Services() {
           <h3 className="banner-title">Need a tailored pricing structure?</h3>
           <p className="banner-desc">Prices vary based on the size of the space, layouts, and unique requirements. Let us build a dynamic checklist just for you.</p>
           <Link to="/quote" className="btn-banner">
-            Get Booking Estimation
+            Get A Quote
           </Link>
         </div>
       </div>

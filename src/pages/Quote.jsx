@@ -44,7 +44,6 @@ export default function Quote() {
               className="field-select"
             >
               <option value="Residential Cleaning">Residential Cleaning</option>
-              <option value="Deep Cleaning">Deep Cleaning</option>
               <option value="Pre/Post Occupational Cleaning">Pre/Post Occupational Cleaning</option>
               <option value="Laundry Cleaning">Laundry Cleaning</option>
               <option value="Commercial/Office Cleaning">Commercial/Office Cleaning</option>
