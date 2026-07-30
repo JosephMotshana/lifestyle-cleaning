@@ -14,7 +14,9 @@ import {
   Flower, 
   Calendar, 
   Sparkle, 
-  CheckCircle2 
+  CheckCircle2,
+  SparkleIcon,
+  
 } from 'lucide-react';
 
 export default function Home() {
@@ -24,6 +26,7 @@ export default function Home() {
     { title: 'Pre/Post-Occupational', icon: <Truck size={24} />, },
     { title: 'Laundry Services', icon: <Shirt size={24} />, },
     { title: 'Gardening & Yard Care', icon: <Flower size={24} />,},
+    { title: 'Pool Cleaning', icon: <SparkleIcon size={24} />,},
   ];
 
   return (

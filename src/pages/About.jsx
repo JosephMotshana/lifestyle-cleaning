@@ -22,7 +22,7 @@ export default function About() {
             </div>
             <div className="split-content">
               <h3 className="split-title">Our Vision</h3>
-              <p className="split-desc">To become a trusted household name in homecare services across our community and surrounding areas.</p>
+              <p className="split-desc">To become a trusted household and corporate name, elevating everyday environments—from family homes to professional workplaces—across our community and surrounding areas.</p>
             </div>
           </div>
 

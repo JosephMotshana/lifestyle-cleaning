@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Sparkles, Truck, Shirt, Paperclip, Flower } from 'lucide-react';
+import { Home, Sparkles, Truck, Shirt, Paperclip, Flower, SparklesIcon } from 'lucide-react';
 
 // Import your custom images from assets
 import residentialImg from '../assets/residential.jpeg';
@@ -8,7 +8,7 @@ import commercialImg from '../assets/commercial.jpeg';
 import prepostImg from '../assets/prepost.jpeg';
 import laundryImg from '../assets/laundry.jpeg';
 import gardenImg from '../assets/garden.jpeg';
-
+import poolImg from '../assets/pool.jpeg';
 
 export default function Services() {
   const serviceList = [
@@ -43,6 +43,14 @@ export default function Services() {
       // Temporary placeholder image for Gardening
       image: gardenImg,
       desc: 'An intensive outdoors refresh tackling overgrown lawn, garden beds, weeds, and pristine hedge trimming.' 
+    },
+
+    { 
+      title: 'Pool Cleaning', 
+      icon: <SparklesIcon size={20} />, 
+      // Temporary placeholder image for Gardening
+      image: poolImg,
+      desc: 'Keep your pool clean, clear and ready to enjoy with our professional pool cleaning service. We remove leaves and debris, brush pool surfaces, vacuum the pool, clean baskets and filters and check the water condition to help maintain a hygienic and inviting swimming environment.' 
     },
   ];
 
