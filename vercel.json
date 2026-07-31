@@ -1,8 +1,8 @@
-
 {
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!.*\\.).*)",
+      "source": "/((?!robots\\.txt|sitemap\\.xml|site\\.webmanifest|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]
